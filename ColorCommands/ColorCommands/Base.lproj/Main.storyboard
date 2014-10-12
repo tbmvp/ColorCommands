@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SIG-L7-lvn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Values-->
+        <scene sceneID="9Dz-z3-h7r">
+            <objects>
+                <viewController id="3YN-p4-RMx" customClass="JPValuesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MQN-fB-Pwa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ert-FB-SAW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jjf-sL-Jdh">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Values" image="values.png" id="7Cy-Rq-u2p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TD3-no-5nV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.5" y="584"/>
+        </scene>
+        <!--Commands-->
+        <scene sceneID="qWt-0L-Trk">
+            <objects>
+                <viewController id="VJY-0C-JSo" customClass="JPCommandsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x1a-6G-So8"/>
+                        <viewControllerLayoutGuide type="bottom" id="fLs-bL-cu1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="la7-C0-Tza">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Commands" image="commands.png" id="2qS-wa-Bfh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7l-Z7-ay8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.5" y="-78"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2lb-hm-v9v">
+            <objects>
+                <tabBarController id="SIG-L7-lvn" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rTo-HA-iDg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VJY-0C-JSo" kind="relationship" relationship="viewControllers" id="17J-br-Hcs"/>
+                        <segue destination="3YN-p4-RMx" kind="relationship" relationship="viewControllers" id="0EJ-24-DMj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uau-Eb-wpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166.5" y="253"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="commands.png" width="32" height="32"/>
+        <image name="values.png" width="32" height="32"/>
+    </resources>
+</document>
